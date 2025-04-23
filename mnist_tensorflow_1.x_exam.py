@@ -1,6 +1,6 @@
 import tensorflow as tf
 import keras
-import pandas
+import pandas #pandas import
 
 tf.compat.v1.disable_eager_execution()  # Eager execution 비활성화
 
@@ -27,8 +27,8 @@ n_hidden2 = 256
 n_classes = 10  # MNIST total classes (0-9 digits)
 
 # Placeholders for input and output
-X = tf.compat.v1.placeholder(tf.float32, [None, n_input])
-Y = tf.compat.v1.placeholder(tf.float32, [None, n_classes])
+X = tf.compat.v1.placeholder(tf.float32, [None, n_input]) # 수정된 부분
+Y = tf.compat.v1.placeholder(tf.float32, [None, n_classes]) # 수정된 부분
 
 # Weights and biases initialization
 weights = {
